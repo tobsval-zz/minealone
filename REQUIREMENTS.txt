@@ -1,0 +1,11 @@
+The "miner.py" script requires two fundamental parts in order to function:
+
+1- Splinter:
+Splinter is a wrapper for Selenium which allows simple yet efficient interactions with a web browser, as well as basic web scraping.
+It can be installed using the "pip" utility.
+
+2- Geckodriver:
+Although Splinter works with a variety of browsers (and the script can be easily adapted to work with them as well), the latter has been
+coded to work with the Firefox browser. In order to do so, it is required that the latest geckodriver release is downloaded and that its
+executable file is added to the PATH environmental variable.
+Geckodriver can be found here: https://github.com/mozilla/geckodriver/releases
