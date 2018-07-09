@@ -3,7 +3,7 @@
 __author__ = "Tobia Valerio"
 __license__ = "Apache License 2.0"
 __version__ = "1.2"
-__status__ = "Testing"
+__status__ = "Production - Unstable"
 
 from splinter import Browser
 import time
