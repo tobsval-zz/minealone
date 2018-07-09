@@ -14,7 +14,7 @@ def time_to_stop():
     If the time is different from the one pointed above, False is returned.
     '''
     
-    if time.strftime("%H") == "02" and time.strftime("%M") == "00":
+    if (time.strftime('%H'), time.strftime('%M')) == ('02', '00'):
         print('''
         ============================
         SERVER RESETTING: EXITING...
@@ -36,7 +36,6 @@ with Browser('firefox') as browser:
 
     browser.find_by_name("username").first.fill(un)
     browser.find_by_name("password").first.fill(pwd)
-    # Still working on a CAPTCHA solver... It'll arrive Soon(TM)
     input("Press ENTER once the CAPTCHA has been solved: ")
 
     print("\nCaptcha solved. Loading ads page...")
